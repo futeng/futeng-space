@@ -1,0 +1,6 @@
+alias goproxy="export https_proxy=http://127.0.0.1:7890 http_proxy=http://127.0.0.1:7890 all_proxy=socks5://127.0.0.1:7890"
+alias disproxy="unset http_proxy https_proxy"
+alias buildranger="mvn -DskipTests clean compile package install assembly:assembly -Drat.skip=true"
+alias buildpulsar="mvn clean install -Pcore-modules,-main -DskipTests"
+alias scpp="scp -i ~/workspaces/azure/pulsar.pem "
+alias sssp="ssh -i ~/workspaces/azure/pulsar.pem "
