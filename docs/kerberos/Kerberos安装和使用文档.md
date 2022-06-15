@@ -728,9 +728,9 @@ kinit -l 10h -r 5d my_principal
 $ kdestroy
 ```
 
-## 常见问题
+# 常见问题
 
-### 无法使用 kadmin 创建用户
+## 无法使用 kadmin 创建用户
 
 报错：Operation requires ``add'' privilege
 
@@ -758,7 +758,7 @@ $ kdestroy
 
 3、再次执行即可
 
-###  无法访问受 Kerberos 包含的页面
+##  无法访问受 Kerberos 包含的页面
 
 参考：[How to Configure Browsers for Kerberos Authentication](https://docs.cloudera.com/documentation/enterprise/6/6.3/topics/cdh_sg_browser_access_kerberos_protected_url.html#topic_6_2__section_cg5_gwv_ls)
 
@@ -772,11 +772,11 @@ $ kdestroy
 # 值输入要访问的地址：，逗号分割
 ```
 
-![image-20200911145456626](/Users/futeng/Downloads/ft_workspace/2-技术培训和运维经验/Kerberos培训/media/image-20200911145456626.png)
+![image-20200911145456626](https://tva1.sinaimg.cn/large/e6c9d24ely1h39a3bt55vj21z40cqtay.jpg)
 
-## 参考资料
+# 参考资料
 
-### man klist
+## man klist
 
 ```shell
 NAME
@@ -831,7 +831,7 @@ COPYRIGHT
        1985-2017, MIT
 ```
 
-### man kinit
+## man kinit
 
 ```shell
 KINIT(1)                                                                                    MIT Kerberos                                                                                    NAME
@@ -919,7 +919,7 @@ COPYRIGHT
 1.15.1
 ```
 
-### man kadmin
+## man kadmin
 
 支持的操作：
 
@@ -955,14 +955,14 @@ COPYRIGHT
 
 
 
-### 其他参考
+## 其他参考
 
 - 参考《[Ticket management](http://web.mit.edu/kerberos/krb5-latest/doc/user/tkt_mgmt.html#ticket-management)》
 - [轻松迁移到带有 Kerberos-5 支持的 OpenAFS](https://www.oschina.net/question/12_8782)
 - [Supported date and time formats](https://web.mit.edu/kerberos/krb5-1.12/doc/basic/date_format.html#getdate)
 - [kadmin](https://web.mit.edu/kerberos/krb5-1.12/doc/admin/admin_commands/kadmin_local.html)
 
-## 更新记录
+# 更新记录
 
 - 2020-09-07 16:02 | Teng Fu 
 
