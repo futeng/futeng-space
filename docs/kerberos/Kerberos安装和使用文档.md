@@ -12,7 +12,7 @@
 - 查询软件对加密算法的支持程度，如降低版本 hadoop 需要去除掉 aes 和 camellia 相关加密算法支持。
 - 配置文件不要加注释。
 - 域名大小写敏感，建议统一使用大写（default_realm）。
-- Java 使用 `aes256-cts` 验证方式需要安装额外的  jar 包，简单起见科删除  aes256-cts 加密方式。
+- Java 使用 `aes256-cts` 验证方式需要安装额外的  jar 包，简单起见可删除  aes256-cts 加密方式。
 
 ## 前置准备
 
@@ -63,7 +63,7 @@ host128137=MYREALM
 
 说明：
 
-- `[logging]`：服务端 志打印位置。
+- `[logging]`：服务端日志打印位置。
 - `[libdefaults]`：连接的默认配置 。
   - `default_realm`：设置默认领域。多个领域是配置在 [realms] 章节。
   - `udp_preference_limit=1`：禁止使用udp（可以防止一个Hadoop中的错误）
@@ -965,4 +965,3 @@ COPYRIGHT
 # 更新记录
 
 - 2020-09-07 16:02 | Teng Fu 
-
