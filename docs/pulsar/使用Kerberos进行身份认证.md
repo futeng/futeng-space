@@ -286,5 +286,14 @@ bin/pulsar-admin --admin-url http://20.232.197.169:8080/ clusters list
 
 ```shell
 bin/pulsar-client --url pulsar://20.232.197.169:6650 produce persistent://public/default/test -n 10  -m "hello pulsar"
-bin/pulsar-client  --url pulsar://20.232.197.169:6650 consume persistent://public/default/test -n 10 -s "consumer-test"  -t "Exclusive" 
+bin/pulsar-client --url pulsar://20.232.197.169:6650 consume persistent://public/default/test -n 10 -s "consumer-test" -t "Exclusive"
 ```
+
+# 报错
+
+## not available to garner  authentication information from the user
+
+原因：无法获取用户信息，可能出现在 keytab 文件没有可读权限。
+
+
+
